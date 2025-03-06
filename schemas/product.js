@@ -20,6 +20,8 @@ let productSchema = new mongoose.Schema({
         default: ''
     },category:{
         type: String,
-       requied: true
+        required: true
     },
 })
+
+module.exports = mongoose.model('Product', productSchema)

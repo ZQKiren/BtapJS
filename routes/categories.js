@@ -1,7 +1,7 @@
 var express = require('express');
 const { ConnectionCheckOutFailedEvent } = require('mongodb');
 var router = express.Router();
-let productModel = require('../schemas/category')
+let categoryModel = require('../schemas/category')
 
 /* GET users listing. */
 router.get('/', async function(req, res, next) {
